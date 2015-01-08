@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recetas>
+  <receta nombre="Lomo de cerdo a la Ciruela" dificultad="alta" tipo="principal">
+    <ingredientes>
+      <ingrediente nombre="lomo de cerdo" cantidad="960 gramos"/>
+      <ingrediente nombre="ciruelas pasas" cantidad="500 gramos"/>
+      <ingrediente nombre="salsa de ciruelas" cantidad="100 mililitros"/>
+      <ingrediente nombre="cebolla" cantidad="1/4"/>
+      <ingrediente nombre="jugo de naranja" cantidad="1/4 de taza"/>
+      <ingrediente nombre="aceite de canola" cantidad="2 cucharadas"/>
+      <ingrediente nombre="caldo de pollo" cantidad="1 taza"/>
+      <ingrediente nombre="romero" cantidad="1 cucharada"/>
+      <ingrediente nombre="sal" cantidad="1 pizca"/>
+      <ingrediente nombre="sal de ajo" cantidad="1 cucharada"/>
+      <ingrediente nombre="pimienta negra" cantidad="1 pizca"/>
+    </ingredientes>
+    <preparacion>
+      <paso numero="1">
+	Calienta el aceite en una olla profunda y cocina ligeramente cebolla y ajo hasta que tomen un tono transparente; aumenta el sabor del lomo con sal de ajo y sella por todos lados.
+      </paso>
+      <paso numero="2">
+	Retíralo de la olla una vez que tenga una apariencia dorada uniforme y colócalo en un refractario semi profundo para horno; reserva.
+      </paso>
+      <paso numero="3">
+	Agrega en la misma olla las ciruelas y permite que se suavicen.
+      </paso>
+      <paso numero="4">
+  Integra jugo de naranja, caldo de pollo y romero, y cocina hasta que hierva; aumenta el sabor con sal y pimienta negra.
+      </paso>
+      <paso numero="5">      
+  Licua y vierte la salsa al lomo. Cubre el refractario con papel aluminio y hornea a 180°C por 30 minutos hasta que la carne esté suave; retira el aluminio y permite que el lomo tome un tono dorado.
+      </paso>
+      <paso numero="6">
+	Reposa unos minutos al salir del horno, rebana y sirve.
+      </paso>
+    </preparacion>
+    <origen>
+      http://www.cheforopeza.com.mx/node/7217
+    </origen>
+  </receta>
+  <receta nombre="Lomo al trapo" dificultad="media" tipo="principal">
+    <ingredientes>
+      <ingrediente nombre="Lomo de res" cantidad="700 gramos"/>
+      <ingrediente nombre="whisky" cantidad="1 botella"/>
+      <ingrediente nombre="trapo de algodón" cantidad="1" />
+      <ingrediente nombre="sal" cantidad="1 kilo"/>
+    </ingredientes>
+    <preparacion>
+      <paso numero="1">
+	Antes de empezar hay que prender la chimenea y dejar arder sus brasas.
+      </paso>
+      <paso numero="2">
+	Mientras la casa se calienta, tomamos el trapo y lo sumergimos en un recipiente donde hemos puesto el licor elegido. El trapo debe quedar bien mojado. Lo extendemos sobre una superficie despejada y cubrimos con abundante sal todo el trapo. La capa de sal debe ser de más o menos 1.5 cm de espesor.
+      </paso>
+      <paso numero="3">
+	Luego, ubicamos nuestro lomo en el extremo del trapo, dejando unos centímetros libres y empezamos a enrollarlo de manera que quede apretado y completamente cubierto. Ahora con la cabulla hacemos un nudo fuerte en uno de los extremos y empezamos a girar la cuerda alrededor del lomo procurando que quede firme y bien apretado. Cuando lleguemos al otro extremo, volvemos a hacer un nudo. Debe sentirse firme y sin ningún un lado descubierto.
+      </paso>
+      <paso numero="4">
+	Cuando lo tengamos listo, lo ponemos sobre el fuego de la chimenea. Las llamas deben tocarlo. Para mí que me gusta la carne no muy roja, el tiempo ideal es 13 minutos por un lado y 13 minutos por el otro. Puedes dejarlo menos tiempo pero no recomiendo menos de 9 minutos por cada lado. Verás cómo se va quemando el trapo y se va formando una costra dura por la sal.
+      </paso>
+      <paso numero="5">
+	Pasado ese tiempo, retira el lomo del fuego y con la ayuda de un cuchillo grande empieza a darle golpes para romper la costra formada. Sacude el exceso de sal que se habrá solidificado y listo. A disfrutar ese delicioso, jugoso y suave lomo de res. Para acompañarlo nada mejor que un cremoso puré de papa y una ensalada fresca.
+      </paso>
+    </preparacion>
+    <origen> http://www.loquesecocinaenestacasa.com/web/new-mas-tips/item/149-como-preparar-un-lomo-al-trapo
+    </origen>
+  </receta>
+  <receta nombre="Baby beef" dificultad="media" tipo="principal">
+    <ingredientes>
+      <ingrediente nombre="Lomo de res" cantidad="350 gramos"/>
+      <ingrediente nombre="Sal parrilla" cantidad="al gusto"/>
+      <ingrediente nombre="Pimienta" cantidad="al gusto"/>
+      <ingrediente nombre="Aceite" cantidad="al gusto"/>
+      <ingrediente nombre="Mantequilla" cantidad="6 cucharadas"/>
+      <ingrediente nombre="Dientes de ajo" cantidad="6 unidades"/>
+      <ingrediente nombre="Perejil" cantidad="3 cucharadas"/>
+      <ingrediente nombre="Sal fina" cantidad="al gusto"/>
+      <ingrediente nombre="Albahaca" cantidad="al gusto"/>
+    </ingredientes>
+    <preparacion>
+      <paso numero="1">
+	Para el Baby Beef
+	Aplique la sal y la pimienta al gusto a la carne y deje reposar. Unte con aceite las dos caras del corte y lleve a la parrilla a fuego medio alto durante más o menos cuatro minutos por cada lado.
+      </paso>
+      <paso numero="2">
+      Para la Mantequilla de Hierbas
+      Al mismo tiempo, derrita la mantequilla en un sartén e incorpore el ajo, el perejil, la albahaca y la sal.
+      </paso>
+      <paso numero="3">
+	Retire y bañe e lomito con la mantequilla saborizada. Puede decorar con trocitos de mantequilla.
+      </paso>
+    </preparacion>
+    <origen>
+      http://cocinagratis.net/baby-beef/2243
+    </origen>
+  </receta>
+  <receta nombre="Cuajada con melao" dificultad="baja" tipo="postre">
+    <ingredientes>
+      <ingrediente nombre="Cuajada" cantidad="75 gramos"/>
+      <ingrediente nombre="Leche de finca (sin pasteurizar)" cantidad="15 tazas"/>
+      <ingrediente nombre="Pastilla de cuajo" cantidad="1\4"/>
+      <ingrediente nombre="Sal (sin pasteurizar)" cantidad="2 cucharaditas"/>
+      <ingrediente nombre="Agua" cantidad="1\2"/>
+      <ingrediente nombre="Canela" cantidad="1 astilla"/>
+      <ingrediente nombre="Jugo de limón" cantidad="1 cucharadita"/>
+	</ingredientes>
+	<preparacion>
+	  <paso numero="1">
+	    Para la cuajada:
+	    Tibie la leche en una olla amplia hasta alcanzar una temperatura de 97° F (36° C).
+	  </paso>
+	  <paso numero="2">
+	    Añada la sal y el cuajo, y retírela del fuego. Déjela reposar a temperatura ambiente, evitando corrientes de aire.
+	  </paso>
+	  <paso numero="3">
+	    Cuando comience a cortarse, escurra totalmente el suero en un cedazo de bambú. Deje reposar la cuajada en refrigeración y córtela en trozos grandes.
+	  </paso>
+	  <paso numero="4">
+	  Para el melao:
+	  Ponga en una olla la panela y el agua a fuego medio.
+	  </paso>
+	  <paso numero="5">
+	    Cuando la panela se haya derretido por completo, agregue la astilla de canela y continúe cocinando hasta obtener un melao ligero.
+	  </paso>
+	  <paso numero="6">
+	    Retire del fuego y añada el jugo de limón para que no se cristalice. Vierta un poco del melao sobre la cuajada y sirva.
+	  </paso>
+	</preparacion>
+	<origen>
+	  http://mitierracolombiana.co/cuajada-con-melao-postre-tipico-del-altiplano-cundiboyacense/
+	</origen>
+      </receta>
+    </recetas>

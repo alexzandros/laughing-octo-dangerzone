@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Aplicación Web</title>
+    <script src="js/jquery-1.11.2.js"></script>
+    <link rel="stylesheet" href="css/estilo.css"/>
+  </head>
+  <body>
+    <div class="cabecera">
+      <h1>Aplicación Web</h1>
+
+      <address>
+	<a href="mailto:Carlos Rojas@portatil">U-portatil\Carlos Rojas</a>
+      </address>
+      <br />
+      <br />
+      
+      <button id="boton">Leer XML</button>
+    </div>
+    <div id="izq">
+      <img src="ant.png" alt="Receta anterior">
+    </div>
+    <div id="contenido">
+      Acá irán las recetas
+    </div>
+    <div id="der">
+      <img src="sig.png" alt="Receta siguiente">
+    </div>
+    <script>
+      $(document).ready(function(){
+
+      $("#boton").click(cargarXML);
+      }
+      );
+
+      function cargarXML()
+      {
+      $.ajax({
+      url:"recetas.xml",
+      success:function(data){
+      var recetas=data.getElementsByTagName("receta");
+      cadena="";
+      for(i=0;i<recetas.length;i++)
+		  {
+		  var nombre=recetas[i].attributes.getNamedItem("nombre").value;
+		  cadena+="<h2>"+nombre+"</h2>";
+		  var ingrediente=recetas[i].firstElementChild.firstElementChild;
+		  while (ingrediente!=null)
+		  {
+		  nombre=ingrediente.attributes.getNamedItem("nombre").value;
+		  var cantidad=ingrediente.attributes.getNamedItem("cantidad").value;
+		  cadena+="<h3>"+nombre+" "+cantidad+"</h3>";
+		  ingrediente=ingrediente.nextElementSibling;
+		  }
+		  cadena+="<p>"+recetas[i].textContent+"</p>";
+		  }
+		  
+		  $("#contenido").html(cadena);
+		  }});
+		  }
+		  </script>
+  </body>
+</html>

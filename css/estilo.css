@@ -1,0 +1,21 @@
+div#contenido
+{
+    width:60%;
+    text-align:justify;
+    float:left;
+    display:inline-block;
+    margin: 0px 5%;
+    font-size:1vw;
+}
+
+div#izq, div#der
+{
+    width:15%;
+    display:inline-block;
+    float:left;
+}
+
+.cabecera
+{
+    margin: 2em 0;
+}
