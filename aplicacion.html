@@ -8,57 +8,122 @@
   </head>
   <body>
     <div class="cabecera">
-      <h1>Aplicación Web</h1>
-
-      <address>
-	<a href="mailto:Carlos Rojas@portatil">U-portatil\Carlos Rojas</a>
-      </address>
-      <br />
-      <br />
-      
-      <button id="boton">Leer XML</button>
+      <h1>Recetario Carlos Roberto Rojas</h1>
     </div>
     <div id="izq">
-      <img src="ant.png" alt="Receta anterior">
+      <img src="ant.png" alt="Receta anterior" id="ant" title="Receta Anterior" />
     </div>
-    <div id="contenido">
-      Acá irán las recetas
-    </div>
+    <div id="contenido"></div>
     <div id="der">
-      <img src="sig.png" alt="Receta siguiente">
+      <img src="sig.png" alt="Receta siguiente" id="sig" title="Receta Siguiente" />
     </div>
     <script>
       $(document).ready(function(){
-
-      $("#boton").click(cargarXML);
-      }
-      );
-
-      function cargarXML()
-      {
       $.ajax({
       url:"recetas.xml",
       success:function(data){
-      var recetas=data.getElementsByTagName("receta");
-      cadena="";
-      for(i=0;i<recetas.length;i++)
+      recetas=data.documentElement;
+      recetaActual=recetas.firstElementChild;
+      mostrarReceta(recetaActual);
+      }
+      });
+      });
+
+      function mostrarReceta(laReceta)
+      {
+      tabla=document.createElement("table");
+      tabla.setAttribute("border","1");
+      cabeceraTabla=document.createElement("thead");
+      cuerpoTabla=document.createElement("tbody");
+      fila=document.createElement("tr");
+      cabecera=document.createElement("th");
+      cabecera.setAttribute("colspan","3");
+      $(cabecera).html(laReceta.getAttribute("nombre"));
+      $(fila).append(cabecera);
+      $(cabeceraTabla).append(fila);
+      $(tabla).append(cabeceraTabla);
+
+      ingredientes=$(laReceta.firstElementChild).children();
+      numIngredientes=ingredientes.length;
+      for(i=0;i<numIngredientes;i++)
 		  {
-		  var nombre=recetas[i].attributes.getNamedItem("nombre").value;
-		  cadena+="<h2>"+nombre+"</h2>";
-		  var ingrediente=recetas[i].firstElementChild.firstElementChild;
-		  while (ingrediente!=null)
+		  fila=document.createElement("tr");
+		  if(i==0)
 		  {
-		  nombre=ingrediente.attributes.getNamedItem("nombre").value;
-		  var cantidad=ingrediente.attributes.getNamedItem("cantidad").value;
-		  cadena+="<h3>"+nombre+" "+cantidad+"</h3>";
-		  ingrediente=ingrediente.nextElementSibling;
+		  celda=document.createElement("td");
+		  contenidoCelda=document.createTextNode("Ingredientes");
+		  celda.setAttribute("rowspan",numIngredientes);
+		  celda.setAttribute("class","ingredientes");
+		  celda.appendChild(contenidoCelda);
+		  fila.appendChild(celda);
 		  }
-		  cadena+="<p>"+recetas[i].textContent+"</p>";
+		  celda=document.createElement("td");
+		  celda.setAttribute("class","otracelda");
+		  contenidoCelda=document.createTextNode(ingredientes[i].getAttribute("nombre"));
+		  celda.appendChild(contenidoCelda);
+		  fila.appendChild(celda);
+
+		  if(i==0)
+		  {
+		  celda=document.createElement("td");
+		  contenidoCelda=document.createTextNode(laReceta.textContent);
+		  celda.setAttribute("rowspan",numIngredientes);
+		  celda.setAttribute("class","pasos");
+		  celda.appendChild(contenidoCelda);
+		  fila.appendChild(celda);
 		  }
-		  
-		  $("#contenido").html(cadena);
-		  }});
+
+		  cuerpoTabla.appendChild(fila);
 		  }
-		  </script>
+
+		  tabla.appendChild(cuerpoTabla);
+      $("#contenido").html(tabla);
+
+      if(laReceta.previousElementSibling==null)
+      {
+      $("#ant").attr("src","ant-disable.png");
+      $("#ant").unbind("click").click(primero);
+      }
+      else
+      {
+      $("#ant").attr("src","ant.png");
+      $("#ant").unbind("click").click(anterior);
+      }
+      
+      if(laReceta.nextElementSibling==null)
+      {
+      $("#sig").attr("src","sig-disable.png");
+      $("#sig").unbind("click").click(ultimo);
+      }
+      else
+      {
+      $("#sig").attr("src","sig.png");
+      $("#sig").unbind("click").click(siguiente);
+      }
+      }
+
+      function primero()
+      {
+      alert("Es el primer elemento, por favor haga uso del botón 'siguiente'");
+      }
+
+      function ultimo()
+      {
+      alert("Es el último elemento, por favor haga uso del botón 'anterior'");
+      }
+      
+      function siguiente()
+      {
+      recetaActual=recetaActual.nextElementSibling;
+      mostrarReceta(recetaActual);
+      }
+
+      function anterior()
+      {
+      recetaActual=recetaActual.previousElementSibling;
+      mostrarReceta(recetaActual);
+      
+      }
+    </script>
   </body>
 </html>

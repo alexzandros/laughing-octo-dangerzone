@@ -1,3 +1,8 @@
+h1
+{
+    text-align:center;
+}
+
 div#contenido
 {
     width:60%;
@@ -10,12 +15,41 @@ div#contenido
 
 div#izq, div#der
 {
-    width:15%;
+    width:10%;
     display:inline-block;
     float:left;
+    text-align:center;
 }
 
 .cabecera
 {
     margin: 2em 0;
+}
+table
+{
+    border-collapse:collapse;
+    width:100%;
+}
+th
+{
+    text-align:center;
+    font-size:2.5em;
+}
+.ingredientes
+{
+    width:10%;
+    text-align:center;
+}
+.otracelda
+{
+    width:20%;
+    text-transform:capitalize;
+}
+.pasos
+{
+    width:60%;
+}
+tr:nth-child(even)
+{
+    background-color:gray;
 }
